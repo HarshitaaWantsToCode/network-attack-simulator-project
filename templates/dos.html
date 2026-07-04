@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DoS Simulation</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>DoS Simulation</h2>
+        <p>This page simulates DoS attack detection by monitoring request frequency from your IP address.</p>
+        <p>Refresh this page rapidly to trigger the detection.</p>
+        {% if result %}
+            <div class="result">{{ result }}</div>
+        {% endif %}
+        <a href="/" class="link">← Back to Home</a>
+    </div>
+</body>
+</html>
